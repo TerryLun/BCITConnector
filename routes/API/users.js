@@ -3,7 +3,8 @@ const router = express.Router();
 const { check, validationResult } = require('express-validator');
 const gravatar = require('gravatar');
 const bcrypt = require('bcryptjs');
-
+const jwt = require('jsonwebtoken');
+const config = require('config');
 const User = require('../../models/User');
 
 // @Route   POST api/users
@@ -55,11 +56,28 @@ router.post(
          user.password = await bcrypt.hash(password, salt);
          //save to database
          await user.save();
-         /**********
-         TO DO:
-         return JWT
-         **********/
-         res.send('User registered.');
+         //save will return a promise with user id in database
+         /**
+         JWT
+         **/
+         //get payload
+         const payload = {
+            user: {
+               //id is just _id in mongo
+               id: user.id,
+            },
+         };
+         //sign token with payload and secret
+         jwt.sign(
+            payload,
+            config.get('jwtSecret'),
+            { expiresIn: 3600 * 24 }, //expires in 24 hours
+            (err, token) => {
+               if (err) throw err;
+               //send token back to client
+               res.json({ token });
+            }
+         );
       } catch (err) {
          console.log(err.message);
          res.status(500).send('Server error.');
