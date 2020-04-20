@@ -1,3 +1,3 @@
 {
-  "mongoURI": "mongodb+srv://Terry:a00855225@bcit-kkxvw.mongodb.net/test?retryWrites=true&w=majority"
+   "mongoURI": "mongodb+srv://Terry:a00855225@bcit-kkxvw.mongodb.net/bcitconnect?retryWrites=true&w=majority"
 }
