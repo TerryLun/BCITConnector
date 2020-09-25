@@ -1,6 +1,7 @@
 /* Global Styles */
 :root {
    --primary-color: #003c71;
+   --blue-color:#003c71;
    --dark-color: #343a40;
    --light-color: #f4f4f4;
    --danger-color: #dc3545;
@@ -173,10 +174,10 @@ img {
 }
 
 .btn-dark,
-.bg-dark,
+.bg-blue,
 .badge-dark,
 .alert-dark {
-   background: var(--dark-color);
+   background: var(--blue-color);
    color: #fff;
 }
 
@@ -323,7 +324,7 @@ button {
 }
 
 .navbar a:hover {
-   color: var(--primary-color);
+   color: var(--light-color);
 }
 
 .navbar .welcome span {
