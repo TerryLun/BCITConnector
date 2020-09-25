@@ -1,6 +1,0 @@
-{
-   "mongoURI": "mongodb+srv://Terry:a00855225@bcit-kkxvw.mongodb.net/bcitconnect?retryWrites=true&w=majority",
-   "jwtSecret": "secret_token",
-   "githubClientId": "1d8e0b6474e09ddfd341",
-   "githubSecret": "892b09c035b84ff0137d13a0ef3410784190c109"
-}
