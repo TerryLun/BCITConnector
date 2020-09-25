@@ -2,14 +2,19 @@
 
 ### Install server dependencies
 
-`npm install`
+```
+$ npm install
+```
 
 ### Install client dependencies
 
-`$ cd client`
-
-`$ npm install`
+```
+$ cd client
+$ npm install
+```
 
 ### Run both Express & React from root
 
-`$ npm run dev`
+```
+$ npm run dev
+```
