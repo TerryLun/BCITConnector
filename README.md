@@ -7,6 +7,7 @@
 ### Install client dependencies
 
 `$ cd client`
+
 `$ npm install`
 
 ### Run both Express & React from root
