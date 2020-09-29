@@ -1,21 +1,21 @@
 # Quick Start 🚀
 
-### Replace mongoURI, githubClientId, githubSecret in `config/default.json`
+### 1. Replace mongoURI, githubClientId, githubSecret in `config/default.json`
 
-### Install server dependencies
+### 2. Install server dependencies
 
 ```
 $ npm install
 ```
 
-### Install client dependencies
+### 3. Install client dependencies
 
 ```
 $ cd client
 $ npm install
 ```
 
-### Run both Express & React from root
+### 4. Run both Express & React from root
 
 ```
 $ npm run dev
