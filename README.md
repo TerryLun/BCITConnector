@@ -1,5 +1,7 @@
 # Quick Start 🚀
 
+### Replace mongoURI, githubClientId, githubSecret in `config/default.json`
+
 ### Install server dependencies
 
 ```
